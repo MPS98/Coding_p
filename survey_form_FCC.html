@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <meta charset="UTF-8" nane="viewport" content="width=device-width, inital-scale=1.0">
+    <style>
+        body {
+            background-color: cornflowerblue;
+            display: grid;
+            grid-row: inherit;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 10px 10px 10px;
+        }
+
+        div p:hover {
+            display: block;
+            justify-content: center;
+            width: inherit;
+            transform: scale(3);
+            background: linear-gradient(45deg, blue, orangered);
+        }
+
+        section {
+            display: flex flex-direction: column;
+            width: 100%;
+            justify-content: center;
+        }
+    </style>
+    <!-- User Story #1: I can see a title with id="title" in H1 sized text.-->
+    <titel>
+        <h1 id="title">Survey Form Politics</h1>
+    </titel>
+</head>
+
+<body>
+    <p id="description">
+        Please support our endevaour in finding out if politics are doomed with the millenials.
+    </p>
+    <form id="survey-form">
+        <section>
+            <label id="name-label">
+                1.
+                <input type="text" id="name" placeholder="Name" required> <br>
+            </label>
+            <label id="email-label">
+                2.
+                <input type="email" id="email" placeholder="Email" required> <br>
+            </label>
+            <label id="number-label">
+                3.
+                <input type="number" id="number" min="13" max="30" placeholder="13" required>
+                <p style="font-size: 10px">Notice: You must be at least 13 years of age to participate.</p>
+            </label>
+        </section>
+        <label id="dropdown" style="display: block" style="justify-content: left">
+            4. Are politics important for you?
+            <select>
+                a.
+                <abled="true">Select an answer</option>
+                    b.
+                    <option value="1">Yes</option>
+                    c.
+                    <option value="2">No</option>
+                    d.
+                    <option value="3">I have never thought about that.</option>
+            </select>
+            <br>
+        </label>
+        <p>How much time in hours a week should school invest into getting children interested in local and global
+            politics?</p>
+        <label for="btn-one">
+            <input id="btn-one" type="radio" name="importance" value="1">1</input>
+        </label><br>
+        <label for="btn-two">
+            <input id="btn-two" type="radio" name="importance" value="2">2</input>
+        </label>
+        <br>
+        <label for="btn-three">
+            <input id="btn-three" type="radio" name="importance" value="3">3</input>
+            <br><br>
+        </label>
+        <br>
+        How do you think children should be taught more about politics?
+        <label for="school">
+            <input type="checkbox" id="school" value="1">At school</input>
+        </label>
+        <label for="church">
+            <input type="checkbox" id="church" value="2">At church</input>
+        </label>
+        <label for="home">
+            <input type="checkbox" id="home" value="3"> At home</input>
+        </label>
+        <label for="other">
+            <input type="checkbox" id="other" value="4"> Other place(s)</input>
+        </label><br><br>
+        <textarea>
+                Comment
+            </textarea>
+        <p>Thankyou for participating!</p>
+        <input id="submit" name="submit" type="submit"><br>
+        <img src="http://www.i2symbol.com/pictures/emojis/a/f/f/2/aff22723ab391b694c9bcae65ee2da76_256.png"
+            alt=":thumbsup:" style="size: 10%">
+        <div>
+            <p>Thankyou!</p>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
